@@ -58,7 +58,7 @@ header {
   .profession {
     color: cyan;
     font-size: 1.2em;
-    font-weight: 300;
+    font-weight: 300 !important;
     @include type-style;
   }
 }
@@ -81,7 +81,7 @@ header {
 // large screen
 @media (min-width: 992px) {
   #header-btn {
-    bottom: 50px !important;
+    bottom: 30px !important;
   }
 
   .tag {
