@@ -1,0 +1,62 @@
+@import "header";
+@import "nav";
+@import "about";
+@import "projects";
+@import "contact";
+@import "common/section-title.scss";
+@import "common/mixins";
+@import "common/fonts";
+
+body {
+  font-family: $roboto-font, sans-serif;
+}
+
+.container {
+  min-width: inherit;
+}
+
+.row {
+  min-width: inherit;
+}
+
+#to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  color: white;
+  background-color: #ff4365;
+  padding: 15px 15px;
+  border-radius: 50%;
+  font-size: 2em;
+  cursor: pointer;
+  transition: 0.7s;
+  z-index: 200;
+}
+
+.social-link {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  z-index: 999;
+
+  a.nav-link {
+    @include social-links-mixin;
+    // @include slide-link-animation;
+
+    &:first-child {
+      font-size: 1.9em;
+    }
+
+    &:hover {
+      color: #ff4365 !important;
+      transform: translateY(-4px) !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  [data-aos-delay] {
+    animation-delay: 0 !important;
+    transition-delay: 0 !important;
+  }
+}

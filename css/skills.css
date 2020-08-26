@@ -1,0 +1,10 @@
+#skills-section .card {
+  width: 4em;
+}
+
+@media (min-width: 768px) {
+  #skills-section .card {
+    width: 6em;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

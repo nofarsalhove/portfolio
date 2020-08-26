@@ -1,0 +1,98 @@
+@import "common/fonts.scss";
+@import "common/mixins.scss";
+
+header {
+  height: 100vh;
+  // background-color: #1b242f;
+  background-color: #021b3c;
+
+  #header-btn {
+    position: absolute;
+    bottom: 5px;
+    left: calc((100% - 180px) / 2);
+    padding: 8px 30px;
+    border: 2px solid #fff;
+    color: white;
+    font-size: 1.3em;
+    font-family: $lato-font, "sans-serif";
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+    &:hover {
+      border-color: #ff4365;
+      background-color: #ff4365;
+
+      .fa-arrow-right {
+        transform: rotate(90deg);
+      }
+    }
+
+    .fa-arrow-right {
+      margin-left: 12px;
+      font-size: 1.1em;
+      transition: 0.5s ease;
+    }
+  }
+
+  .container {
+    height: inherit;
+  }
+
+  .tag {
+    font-family: $caveat-font, cursive;
+    font-size: 20px;
+    color: #fff;
+    // color: #696969;
+    @include type-style;
+    font-weight: normal;
+  }
+
+  .name-title {
+    color: cyan;
+    font-size: 1.6em;
+    // font-size: 6vw !important;
+    @include type-style;
+  }
+
+  .profession {
+    color: cyan;
+    font-size: 1.2em;
+    font-weight: 300;
+    @include type-style;
+  }
+}
+
+// medium screen
+@media (min-width: 768px) {
+  // header.container {
+  //   padding-top: 260px !important;
+  // }
+
+  .name-title {
+    font-size: 3em !important;
+  }
+
+  .profession {
+    font-size: 2em !important;
+  }
+}
+
+// large screen
+@media (min-width: 992px) {
+  #header-btn {
+    bottom: 50px !important;
+  }
+
+  .tag {
+    font-size: 26px !important;
+  }
+
+  .name-title {
+    font-size: 4.2em !important;
+  }
+
+  .profession {
+    font-size: 2.3em !important;
+  }
+}

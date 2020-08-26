@@ -1,0 +1,75 @@
+@import "common/mixins.scss";
+
+#contact {
+  background-color: #042d62;
+  // background-color: #94c284;
+  h1 {
+    color: white;
+  }
+
+  label {
+    position: absolute;
+    left: -3000px;
+    overflow: hidden;
+  }
+
+  .form-control {
+    // background-color: rgba(#021b3b, 0.4);
+    background-color: rgba(#000, 0.2);
+    border: none;
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+
+  .send-btn {
+    border: 2px solid #fff;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 999;
+    border-radius: unset !important;
+    cursor: pointer;
+    transition: 0.7s ease;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: #ff4365;
+      border-color: #ff4365;
+
+      .fa-paper-plane {
+        transform: translateX(12px) rotate(45deg);
+      }
+    }
+
+    .fa-paper-plane {
+      margin-left: 4px;
+      transition: 0.7s ease;
+    }
+  }
+
+  .social-links {
+    a {
+      @include social-links-mixin;
+      margin: 0 8px;
+
+      &:hover {
+        color: #ff4365;
+        transform: translateY(-4px);
+      }
+    }
+  }
+}

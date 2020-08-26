@@ -1,0 +1,33 @@
+#project-section .img-container {
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#project-section .img-container img {
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+#project-section .img-container .img-description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 999;
+  -webkit-transition: background-color 0.5s ease-out, opacity 0.5s ease-in;
+  transition: background-color 0.5s ease-out, opacity 0.5s ease-in;
+}
+
+#project-section .img-container:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#project-section .img-container:hover .img-description {
+  background-color: rgba(25, 27, 29, 0.9);
+  opacity: 1;
+}
+/*# sourceMappingURL=projects.css.map */

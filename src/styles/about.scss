@@ -1,0 +1,45 @@
+#about {
+  overflow-x: hidden;
+  p {
+    font-size: 13pt;
+    line-height: 1.7;
+    text-align: justify;
+    color: #3d3d3d;
+  }
+  img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tech-icon {
+    font-size: 1.7em;
+    margin-right: 10px;
+    color: #858585;
+
+    &.jquery {
+      font-size: 2em;
+    }
+
+    &.express {
+      font-size: 3.7em;
+    }
+
+    &.php,
+    &.mysql {
+      font-size: 3em;
+    }
+
+    &.mongo {
+      font-size: 2.9em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #about {
+    img {
+      width: unset;
+      height: unset;
+    }
+  }
+}

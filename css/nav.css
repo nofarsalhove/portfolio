@@ -1,0 +1,18 @@
+.navbar-toggler {
+  border: none !important;
+}
+
+nav .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav .btn .fa-bars {
+  font-size: 2em;
+}
+
+nav .nav-link {
+  color: white !important;
+}
+/*# sourceMappingURL=nav.css.map */
