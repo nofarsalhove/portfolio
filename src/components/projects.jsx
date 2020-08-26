@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import SectionTitle from "./section-title";
-import hitMeUp from "../assets/images/projects/hitMeUp.JPG";
-import flashCrm from "../assets/images/projects/flashCrm.JPG";
-import hiJobIL from "../assets/images/projects/hiJobsIL.JPG";
-import portfolio from "../assets/images/projects/portfolio.JPG";
+import hitMeUp from "../assets/images/projects/hitMeUp.jpg";
+import flashCrm from "../assets/images/projects/flashCrm.jpg";
+import hiJobIL from "../assets/images/projects/hiJobsIL.jpg";
+import portfolio from "../assets/images/projects/portfolio.jpg";
 import CreateProjectCard from "./create-project-card";
 
 class Projects extends Component {
