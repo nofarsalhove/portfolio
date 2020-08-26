@@ -3,7 +3,7 @@ import SectionTitle from "./section-title";
 import hitMeUp from "../assets/images/projects/hitMeUp.jpg";
 import flashCrm from "../assets/images/projects/flashCrm.jpg";
 import hiJobIL from "../assets/images/projects/hiJobsIL.jpg";
-import portfolio from "../assets/images/projects/portfolio.jpg";
+import portfolio from "../assets/images/projects/portfolio.JPG";
 import CreateProjectCard from "./create-project-card";
 
 class Projects extends Component {
