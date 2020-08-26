@@ -28,7 +28,7 @@ class Header extends Component {
         </Link>
         <div className="container d-flex align-items-center">
           <div className="row">
-            <div className="main-title">
+            <div className="main-title pl-3 pl-lg-0">
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={500} />
                 <p className="tag mb-3">&lt;html&gt;</p>
