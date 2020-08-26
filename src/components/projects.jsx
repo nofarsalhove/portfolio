@@ -36,7 +36,7 @@ class Projects extends Component {
         title: "My Portfolio",
         image: portfolio,
         techs: ["React"],
-        webLink: "http://www.nofarsalhove.com/",
+        webLink: "https://www.nofarsalhove.com/",
         gitLink: "https://github.com/nofarsalhove/portfolio",
         animationDelay: 600
       }
