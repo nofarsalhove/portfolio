@@ -30,7 +30,7 @@ class About extends Component {
           <SectionTitle title="About Me" />
 
           <div className="row mb-5">
-            <div className="col-10 col-lg-5 mx-auto">
+            <div className="col-10 col-sm-8 col-md-7 col-lg-5 mx-auto">
               <img
                 src={me}
                 alt="me"
