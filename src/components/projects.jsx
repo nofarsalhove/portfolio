@@ -45,7 +45,7 @@ class Projects extends Component {
   render() {
     const { projects } = this.state;
     return (
-      <div className="container-fluid py-4" id="project">
+      <div className="container-fluid py-5" id="project">
         <div className="container">
           <SectionTitle title="Projects" />
 

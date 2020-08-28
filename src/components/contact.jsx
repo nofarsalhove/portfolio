@@ -54,7 +54,7 @@ class Contact extends Component {
   render() {
     const { data, errors } = this.state;
     return (
-      <div className="container-fluid py-4" id="contact">
+      <div className="container-fluid py-5" id="contact">
         <div className="container">
           <SectionTitle title="Let's keep in touch" />
 

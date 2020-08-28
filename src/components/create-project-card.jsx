@@ -32,7 +32,7 @@ class CreateProjectCard extends Component {
                 <i className="fab fa-github"></i>
               </a>
               {webLink && (
-                <a href={webLink} className="nav-link glob-icon">
+                <a href={webLink} className="nav-link glob-icon ml-3">
                   <i className="fas fa-globe "></i>
                 </a>
               )}

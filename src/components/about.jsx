@@ -25,12 +25,21 @@ class About extends Component {
   render() {
     const { techs } = this.state;
     return (
-      <div className="container-fluid py-4" id="about">
+      <div className="container-fluid py-5" id="about">
         <div className="container">
           <SectionTitle title="About Me" />
 
           <div className="row mb-5">
-            <div className="col-lg-7 d-flex align-items-center">
+            <div className="col-10 col-lg-5 mx-auto">
+              <img
+                src={me}
+                alt="me"
+                className="img-fluid rounded-circle"
+                data-aos="fade-left"
+                data-aos-duration="600"
+              />
+            </div>
+            <div className="col-lg-7 d-flex align-items-center pt-4 pt-lg-0">
               <div
                 className="px-lg-4"
                 data-aos="fade-right"
@@ -56,15 +65,6 @@ class About extends Component {
                   })}
                 </div>
               </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <img
-                src={me}
-                alt="me"
-                className="img-fluid rounded-circle"
-                data-aos="fade-left"
-                data-aos-duration="600"
-              />
             </div>
           </div>
         </div>

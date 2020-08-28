@@ -96,6 +96,8 @@ class App extends Component {
   }
 }
 
-AOS.init();
+AOS.init({
+  once: true
+});
 
 export default App;
