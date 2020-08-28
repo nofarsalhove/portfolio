@@ -33,7 +33,7 @@ body {
   z-index: 200;
 }
 
-.social-link {
+nav .social-link {
   position: absolute;
   top: 11px;
   right: 15px;
@@ -41,7 +41,6 @@ body {
 
   a.nav-link {
     @include social-links-mixin;
-    // @include slide-link-animation;
 
     &:first-child {
       font-size: 1.9em;

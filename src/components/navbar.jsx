@@ -108,7 +108,7 @@ class Navbar extends Component {
                 </li>
               );
             })}
-            <li className="nav-item nav-social-link d-lg-none">
+            <li className="nav-item social-link-li d-lg-none">
               <a href="https://github.com/nofarsalhove" className="nav-link">
                 <i className="fab fa-github"></i>
               </a>

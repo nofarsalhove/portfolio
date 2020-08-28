@@ -52,30 +52,19 @@ class App extends Component {
     return (
       <React.Fragment>
         <div className="App" id="top">
-          <Link to="#top" onClick={e => this.handleScrollToTop(e)}>
-            <i
-              className="fas fa-arrow-up"
-              id="to-top-btn"
-              style={{
-                visibility,
-                opacity
-              }}
-            ></i>
-          </Link>
-
-          <div className="social-link d-none d-lg-block">
-            <a href="https://github.com/nofarsalhove" className="nav-link">
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nofar-salhove/"
-              className="nav-link"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-          </div>
-
           <nav className="w-100">
+            <div className="social-link d-none d-lg-block">
+              <a href="https://github.com/nofarsalhove" className="nav-link">
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nofar-salhove/"
+                className="nav-link"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </div>
+
             <Navbar />
           </nav>
 
@@ -86,10 +75,22 @@ class App extends Component {
           <main>
             <About />
             <Projects />
-            <Contact />
+            {/* <Contact /> */}
           </main>
 
-          {/* <footer></footer> */}
+          <footer>
+            <Contact />
+            <Link to="#top" onClick={e => this.handleScrollToTop(e)}>
+              <i
+                className="fas fa-arrow-up"
+                id="to-top-btn"
+                style={{
+                  visibility,
+                  opacity
+                }}
+              ></i>
+            </Link>
+          </footer>
         </div>
       </React.Fragment>
     );

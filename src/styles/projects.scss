@@ -6,8 +6,6 @@
   // background-color: #f5f5f5;
 
   .project-container {
-    position: relative;
-
     .project-description {
       position: absolute;
       width: 100%;
@@ -37,7 +35,8 @@
       font-style: italic;
     }
 
-    .social-links {
+    .project-links {
+      position: relative;
       a.nav-link {
         @include social-links-mixin;
         margin-top: 20px;

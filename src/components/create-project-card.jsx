@@ -18,7 +18,7 @@ class CreateProjectCard extends Component {
         data-aos="zoom-in"
         data-aos-delay={animationDelay}
       >
-        <div className="project-description text-white py-3 text-center">
+        <section className="project-description text-white py-3 text-center">
           <h2 className="card-title">{title}</h2>
           <div className="techs card-text">
             {techs.map((tech, index) => {
@@ -27,18 +27,19 @@ class CreateProjectCard extends Component {
               }
               return <span key={index}> {tech} |</span>;
             })}
-            <div className="social-links">
-              <a href={gitLink} className="nav-link git-icon">
-                <i className="fab fa-github"></i>
-              </a>
-              {webLink && (
-                <a href={webLink} className="nav-link glob-icon ml-3">
-                  <i className="fas fa-globe "></i>
-                </a>
-              )}
-            </div>
           </div>
-        </div>
+          <nav className="project-links">
+            <a href={gitLink} className="nav-link git-icon">
+              <i className="fab fa-github"></i>
+            </a>
+            {webLink && (
+              <a href={webLink} className="nav-link glob-icon ml-3">
+                <i className="fas fa-globe "></i>
+              </a>
+            )}
+          </nav>
+        </section>
+
         <img src={image} className="img-fluid" alt={title} />
       </div>
     );

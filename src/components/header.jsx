@@ -19,14 +19,14 @@ class Header extends Component {
     return (
       <React.Fragment>
         <Link
-          // className="btn"
           to="#contact"
           id="header-btn"
           onClick={e => this.handleScrollToContact(e)}
         >
           Let's Talk <i className="fas fa-arrow-right"></i>
         </Link>
-        <div className="container d-flex align-items-center">
+
+        <section className="container d-flex align-items-center">
           <div className="row">
             <div className="main-title pl-3 pl-lg-0">
               <Typist cursor={{ show: false }}>
@@ -68,7 +68,7 @@ class Header extends Component {
               </Typist>
             </div>
           </div>
-        </div>
+        </section>
       </React.Fragment>
     );
   }
