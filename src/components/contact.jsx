@@ -58,7 +58,12 @@ class Contact extends Component {
         <div className="container">
           <SectionTitle title="Let's keep in touch" />
 
-          <div className="row justify-content-center">
+          <div
+            className="row justify-content-center"
+            data-aos="zoom-in"
+            data-aos-duration="650"
+            data-aos-delay="300"
+          >
             <form
               method="POST"
               autoComplete="off"

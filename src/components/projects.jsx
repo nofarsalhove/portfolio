@@ -15,7 +15,7 @@ class Projects extends Component {
         techs: ["Javascript", "RestApi"],
         webLink: "https://hit-me-up.netlify.app/",
         gitLink: "https://github.com/nofarsalhove/hit-me-up",
-        animationDelay: 0
+        animationDelay: 100
       },
       {
         title: "Flash CRM",
@@ -23,14 +23,14 @@ class Projects extends Component {
         techs: ["Angular", "Firebase"],
         webLink: "https://flash-crm.web.app/",
         gitLink: "https://github.com/nofarsalhove/flash-crm",
-        animationDelay: 200
+        animationDelay: 300
       },
       {
         title: "Hi-JobsIL",
         image: hiJobIL,
         techs: ["React", "Node.js", "MongoDB"],
         gitLink: "https://github.com/nofarsalhove/hi-jobs-il",
-        animationDelay: 400
+        animationDelay: 500
       },
       {
         title: "My Portfolio",
@@ -38,7 +38,7 @@ class Projects extends Component {
         techs: ["React"],
         webLink: "https://www.nofarsalhove.com/",
         gitLink: "https://github.com/nofarsalhove/portfolio",
-        animationDelay: 600
+        animationDelay: 700
       }
     ]
   };

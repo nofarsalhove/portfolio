@@ -3,4 +3,17 @@ h1 {
   color: #3d3d3d;
   font-weight: 700;
   font-style: italic;
+  font-size: 33pt !important;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40pt !important;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 48pt !important;
+  }
 }

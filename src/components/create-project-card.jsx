@@ -15,7 +15,10 @@ class CreateProjectCard extends Component {
     return (
       <div
         className="project-container col-10 col-md-10 col-lg-5 mb-4 px-0 mx-sm-2 "
-        data-aos="zoom-in"
+        // data-aos="zoom-in"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="600"
         data-aos-delay={animationDelay}
       >
         <section className="project-description text-white py-3 text-center">

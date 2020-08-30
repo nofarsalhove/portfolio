@@ -14,7 +14,7 @@ header {
     padding: 8px 30px;
     border: 2px solid #fff;
     color: white;
-    font-size: 1.3em;
+    font-size: 15.5pt;
     font-family: $lato-font, "sans-serif";
     font-style: italic;
     text-decoration: none;
@@ -45,22 +45,21 @@ header {
     font-size: 20px;
     color: #fff;
     // color: #696969;
-    @include type-style;
     font-weight: normal;
   }
 
   .name-title {
     color: cyan;
-    font-size: 1.6em;
+    // font-size: 1.6em;
+    font-size: 33pt !important;
     // font-size: 6vw !important;
-    @include type-style;
   }
 
   .profession {
     color: cyan;
-    font-size: 1.2em;
+    // font-size: 1.2em;
+    font-size: 17pt;
     font-weight: 300 !important;
-    @include type-style;
   }
 }
 
@@ -69,31 +68,46 @@ header {
   // header.container {
   //   padding-top: 260px !important;
   // }
+  header {
+    .container {
+      width: 900px;
+    }
 
-  .name-title {
-    font-size: 3em !important;
-  }
+    .name-title {
+      // font-size: 2em !important;
+      font-size: 40pt !important;
+    }
 
-  .profession {
-    font-size: 2em !important;
+    .profession {
+      // font-size: 2em !important;
+      font-size: 22pt !important;
+    }
   }
 }
 
 // large screen
 @media (min-width: 992px) {
-  #header-btn {
-    bottom: 30px !important;
-  }
+  header {
+    .container {
+      width: 900px;
+    }
 
-  .tag {
-    font-size: 26px !important;
-  }
+    #header-btn {
+      bottom: 10px !important;
+    }
 
-  .name-title {
-    font-size: 4.2em !important;
-  }
+    .tag {
+      font-size: 26px !important;
+    }
 
-  .profession {
-    font-size: 2.3em !important;
+    .name-title {
+      // font-size: 4.2em !important;
+      font-size: 48pt !important;
+    }
+
+    .profession {
+      // font-size: 2.3em !important;
+      font-size: 22pt !important;
+    }
   }
 }

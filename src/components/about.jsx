@@ -30,13 +30,14 @@ class About extends Component {
           <SectionTitle title="About Me" />
 
           <div className="row mb-5">
-            <div className="col-10 col-sm-8 col-md-7 col-lg-5 mx-auto">
+            <div className="col-10 col-sm-8 col-md-7 col-lg-4 mx-auto">
               <img
                 src={me}
                 alt="me"
                 className="img-fluid rounded-circle"
                 data-aos="fade-right"
                 data-aos-duration="600"
+                data-aos-delay="100"
               />
             </div>
             <div className="col-lg-7 d-flex align-items-center pt-4 pt-lg-0">
@@ -44,6 +45,7 @@ class About extends Component {
                 className="px-lg-4"
                 data-aos="fade-left"
                 data-aos-duration="600"
+                data-aos-delay="100"
               >
                 <p>
                   I'm Nofar, a Full-Stack Web developer and I live in Givatayim.

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Typist from "react-typist";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import $ from "jquery";
 
 class Header extends Component {
@@ -18,41 +18,43 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <Link
+        {/* <Link
           to="#contact"
           id="header-btn"
           onClick={e => this.handleScrollToContact(e)}
         >
           Let's Talk <i className="fas fa-arrow-right"></i>
-        </Link>
+        </Link> */}
 
         <section className="container d-flex align-items-center">
           <div className="row">
             <div className="main-title pl-3 pl-lg-0">
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={500} />
-                <p className="tag mb-3">&lt;html&gt;</p>
+                <p className="tag mb-2">&lt;html&gt;</p>
               </Typist>
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={1000} />
-                <p className="tag mb-5 ml-md-4">&lt;body&gt;</p>
+                <p className="tag ml-md-4 mb-5">&lt;body&gt;</p>
               </Typist>
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={1500} />
+                <span className="tag ml-md-5">&lt;h1&gt;</span>
                 <h1 className="name-title pl-md-5">
-                  <span className="tag">&lt;h1&gt;</span>&nbsp; Hi, I'm Nofar
-                  Salhove&nbsp;&nbsp;
-                  <span className="tag">&lt;&#47;h1&gt;</span>
+                  <span className="ml-md-5">Hi,</span>
+                  <br />
+                  <span className="ml-md-5 mr-3">I'm Nofar Salhove</span>
                 </h1>
+                <span className="tag ml-md-5">&lt;&#47;h1&gt;</span>
               </Typist>
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={4700} />
                 <p
                   data-text="A Full Stack Web Developer"
-                  className="profession mb-5 ml-md-5"
+                  className="profession ml-md-5 mb-5"
                 >
                   <span className="tag">&lt;p&gt;</span>
-                  <span className="mx-4 mx-md-5">
+                  <span className="mx-2 mx-md-3">
                     A Full Stack Web Developer
                   </span>
                   <span className="tag">&lt;&#47;p&gt;</span>
@@ -60,11 +62,11 @@ class Header extends Component {
               </Typist>
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={7900} />
-                <p className="tag mb-3 ml-md-4">&lt;&#47;body&gt;</p>
+                <p className="tag mb-2 ml-md-4">&lt;&#47;body&gt;</p>
               </Typist>
               <Typist cursor={{ show: false }}>
                 <Typist.Delay ms={8500} />
-                <p className="tag mb-0">&lt;&#47;html&gt;</p>
+                <p className="tag mb-4">&lt;&#47;html&gt;</p>
               </Typist>
             </div>
           </div>
