@@ -3,38 +3,7 @@
 
 header {
   height: 100vh;
-  // background-color: #021b3c;
-  // background-color: #252934;
   background-color: #1b242f;
-
-  #header-btn {
-    position: absolute;
-    bottom: 5px;
-    left: calc((100% - 180px) / 2);
-    padding: 8px 30px;
-    border: 2px solid #fff;
-    color: white;
-    font-size: 15.5pt;
-    font-family: $lato-font, "sans-serif";
-    font-style: italic;
-    text-decoration: none;
-    transition: 0.5s ease;
-
-    &:hover {
-      border-color: #ff4365;
-      background-color: #ff4365;
-
-      .fa-arrow-right {
-        transform: rotate(90deg);
-      }
-    }
-
-    .fa-arrow-right {
-      margin-left: 12px;
-      font-size: 1.1em;
-      transition: 0.5s ease;
-    }
-  }
 
   .container {
     height: inherit;
@@ -44,20 +13,16 @@ header {
     font-family: $caveat-font, cursive;
     font-size: 20px;
     color: #fff;
-    // color: #696969;
     font-weight: normal;
   }
 
   .name-title {
     color: cyan;
-    // font-size: 1.6em;
     font-size: 33pt !important;
-    // font-size: 6vw !important;
   }
 
   .profession {
     color: cyan;
-    // font-size: 1.2em;
     font-size: 17pt;
     font-weight: 300 !important;
   }
@@ -65,21 +30,16 @@ header {
 
 // medium screen
 @media (min-width: 768px) {
-  // header.container {
-  //   padding-top: 260px !important;
-  // }
   header {
     .container {
       width: 900px;
     }
 
     .name-title {
-      // font-size: 2em !important;
       font-size: 40pt !important;
     }
 
     .profession {
-      // font-size: 2em !important;
       font-size: 22pt !important;
     }
   }
@@ -101,12 +61,10 @@ header {
     }
 
     .name-title {
-      // font-size: 4.2em !important;
       font-size: 48pt !important;
     }
 
     .profession {
-      // font-size: 2.3em !important;
       font-size: 22pt !important;
     }
   }

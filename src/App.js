@@ -75,7 +75,6 @@ class App extends Component {
           <main>
             <About />
             <Projects />
-            {/* <Contact /> */}
           </main>
 
           <footer>

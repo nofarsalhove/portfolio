@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import me from "../assets/images/me.JPG";
-import TechIcon from "./techIcon";
+// import TechIcon from "./techIcon";
 import SectionTitle from "./section-title";
 
 class About extends Component {
@@ -63,7 +63,12 @@ class About extends Component {
                 </p>
                 <div className="row align-items-center px-3 mt-2 mb-3 my-lg-0 justify-content-center">
                   {techs.map((tech, index) => {
-                    return <TechIcon classes={tech} key={index} />;
+                    return (
+                      <i
+                        className={`tech-icon devicon-${tech}`}
+                        key={index}
+                      ></i>
+                    );
                   })}
                 </div>
               </div>

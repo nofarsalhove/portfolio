@@ -5,4 +5,9 @@
   margin: 0 5px;
   padding: 0;
   display: inline-block;
+
+  &:hover {
+    color: #e31b6d;
+    transform: translateY(-4px);
+  }
 }

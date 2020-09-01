@@ -2,9 +2,7 @@
 @import "common/fonts.scss";
 
 #project {
-  // background-color: #d6d6d6;
   background-color: #dadada;
-  // background-color: #c5c5c5;
 
   .project-container {
     position: relative;
@@ -15,7 +13,6 @@
       height: 100%;
       opacity: 0;
       z-index: 999;
-      // transition: background-color 0.3s ease-out, opacity 0.4s ease-in;
       transition: all 0.7s;
       display: flex;
       justify-content: center;
@@ -26,13 +23,11 @@
     &:hover {
       .project-description {
         background-color: rgba(#191b1d, 0.9);
-        // background-color: rgba(#021b3c, 0.9);
         opacity: 1;
       }
     }
 
     .card-title {
-      // font-family: $caveat-font;
       font-family: $lato-font, sans-serif;
       font-weight: 700;
       font-style: italic;
@@ -47,7 +42,7 @@
         font-size: 1.6em;
 
         &:hover {
-          transform: translateY(-4px);
+          color: white;
         }
       }
     }
